@@ -32,12 +32,4 @@ def create_generator(features, targets, batch_size):
     img_generator = ImageDataGenerator(zoom_range = 0.15, width_shift_range = 0.1, 
         height_shift_range = 0.1, rotation_range = 0.15)
     generator = img_generator.flow(features, targets, batch_size = batch_size)
-    return generator
-
-
-
-
-
-
-
-    
+    return generator    
