@@ -26,7 +26,7 @@ class args:
     val_batch_size = 64
 ```
 
-### Create train and validation data
+### Preprocess and create train and validation data
 In this example, we will train the model using cross-validation. We will split the data into ```args.num_splits``` folds.
 ```
 df = pd.read_csv('./train.csv')
